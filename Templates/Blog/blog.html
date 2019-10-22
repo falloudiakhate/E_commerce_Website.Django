@@ -1,0 +1,26 @@
+{% extends "Layouts/base.html" %}
+
+      {% block title %} E_Commerce_Website/Blog {% endblock title %}
+
+{% block content %}
+{% load static %}
+
+                   <div class="carousel-inner">
+
+                                          <div class="carousel-item active">
+                                                <img class="d-block w-100" src="{% static 'images/home-bg.jpg' %}"  height="500" width=100% alt="First slide">
+
+                                                 <div class="carousel-caption d-none d-md-block">
+
+                                                      <h1 class="lead" style="font-size : 50px ; color:black">DiarraShop Blog</h1>
+                                                      <a class="btn btn-action btn-lg" role="button">Poster En Ligne</a>
+
+                                                </div>
+                                        </div>
+
+                   </div>
+
+
+
+
+{% endblock content %}

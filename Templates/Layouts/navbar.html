@@ -1,0 +1,33 @@
+{% block content %}
+
+<!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span          class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html" style="font-size: 70px">DiarraShop</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="{% url "HomePage" %}">Home</a></li>
+          <li><a href="about.html">Panier</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nos Produits <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="sidebar-left.html">Informatique</a></li>
+              <li class="active"><a href="sidebar-right.html">Electromenager</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url "BlogPage" %}">Blog</a></li>
+          <li><a class="btn" href="{% url "Signup" %}">Sign up / Login</a></li>
+          <li><a class="btn-danger" href="{% url "Logout" %}">Logout</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- /.navbar -->
+
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "Layouts/base.html" %}
+
+      {% block title %} E_Commerce_Website/Sign up {% endblock title %}
+
+{% block content %}
+{% load static %}
+
+                   <div class="carousel-inner">
+
+                                          <div class="carousel-item active">
+                                                <img class="d-block w-100" src="{% static 'images/sign.png' %}"  height="500" width=100% alt="First slide">
+
+                                                 <div class="carousel-caption d-none d-md-block">
+
+                                                      <h1 class="lead" style="font-size : 50px ; color:white">DiarraShop Compte</h1>
+                                                      <a class="btn btn-action btn-lg" role="button" href="{% url 'Login' %}">Login</a>
+
+                                                </div>
+                                        </div>
+
+                   </div>
+
+
+                  {% include "Layouts/signupbody.html" %}
+
+
+{% endblock content %}
